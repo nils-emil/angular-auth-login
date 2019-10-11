@@ -125,6 +125,7 @@ export class AuthService {
       .subscribe(() => {
           delete this.sessionInfo;
           localStorage.clear();
+          clearInterval(this.refreshTokenExpirationInterval);
           this.router.navigate(['/login']);
         }
       );
