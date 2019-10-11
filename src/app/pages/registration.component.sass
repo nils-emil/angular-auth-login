@@ -1,0 +1,26 @@
+@import "./src/styles"
+
+.registration
+  text-align: center
+  padding-top: 2rem
+
+@media (min-width: 900px)
+  .registration
+    margin: 0 auto
+    width: 50%
+
+input[type=date]::-webkit-inner-spin-button
+  -webkit-appearance: none
+  display: none
+
+label
+  @include small-left-block
+
+.form-input
+  @include form-input
+
+.btn-submit
+  @include btn-submit
+
+.has-error
+  @include has-error

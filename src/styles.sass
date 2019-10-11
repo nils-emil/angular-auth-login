@@ -1,0 +1,42 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: sans-serif
+
+.pt-1-rem
+  padding-top: 1rem
+
+@mixin small-left-block
+  display: block
+  text-align: left
+  padding-top: 0.75rem
+
+@mixin form-input
+  border-radius: 0.5rem
+  border: 1px solid #609
+  padding: 1rem
+  height: 1rem
+  width: 100%
+
+@mixin btn-submit
+  margin-top: 1rem
+  border-radius: 0.5rem
+  background-color: #4CAF50
+  border: none
+  color: white
+  padding: 1rem 2rem
+  font-size: 1rem
+  cursor: pointer
+
+  &:hover
+    transition: all .2s ease-in-out
+    transform: scale(1.1)
+
+@mixin has-error
+  border: 1px
+  text-align: left
+  font-size: 0.75rem
+  color: #D8000C
